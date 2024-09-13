@@ -1,0 +1,36 @@
+<!-- 文档类型为HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 字符集为UTF-8 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置浏览器兼容性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速入门</title>
+    <script src="js/vue.js"></script>
+    
+    
+</head>
+<body>    
+    <div id="app">
+        <a v-bind:href="url">链接1</a>
+        <a :href="url">链接2</a>
+
+        <input type="text" v-model="url">
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: "#app",
+        data:{
+            url:"https://www.baidu.com"
+        }
+    })
+</script>
+
+
+
+</html>
